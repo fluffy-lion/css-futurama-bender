@@ -11,6 +11,44 @@
     height: 600px;
     width: 500px;
 }
+.antenna-top {
+    width: 30px;
+    height: 30px;
+    background-color: var(--b-grey-light);
+    position: absolute;
+    top: 70px;
+    left: 179px;
+    z-index: 3;
+    box-sizing: border-box;
+    border: var(--out-border);
+    border-radius: 50%;
+}
+.antenna-height {
+    width: 24px;
+    height: 90px;
+    background-color: var(--b-grey); 
+    position: absolute;
+    left: 179px;
+    top: 84px;
+    border-radius: 70% 70% 90% 90% / 190% 190% 10% 10%;
+    transform: rotateY(20deg) rotate(5deg);
+    z-index: 2;
+    box-sizing: border-box;
+    border: var(--out-border);
+}
+.antenna-base {
+    width: 50px;
+    height: 20px;
+    background-color: var(--b-grey-light);
+    border: var(--out-border);
+    position: absolute;
+    top: 164px;
+    left: 157px;
+    z-index: 1;
+    border-radius: 600px 600px 600px 600px / 450px 450px 100px 100px;
+    transform: rotate(5deg);
+    
+}
 .main {
     height: 270px;
     width: 180px;
@@ -81,13 +119,15 @@
 
 .side-teeth {
     width: 40px;
-    height: 60px;
-    background-color: red;
+    height: 64px;
+    background-color: var(--b-yellow);
     position: absolute;
-    bottom: 80px;
+    bottom: 81px;
     left: 200px;
     z-index: 5;
     box-sizing: border-box;
-    border-radius: 0 50% 50% 0;
-    transform:skewY(-5deg)
+    border: var(--out-border);
+    border-radius: 0 110px 100px 0;
+    transform:skewY(-10deg);
+    border-left: none;
 }
